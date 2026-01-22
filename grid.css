@@ -1,0 +1,201 @@
+html ,body{
+    margin:0;
+    padding:0;
+}
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    " header header "
+    "nav  nav"
+    "aside  main"
+    "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    text-align: center;
+    background-color:rgb(73, 188, 73);
+    color:white; 
+    padding-top: 30px;
+    padding-bottom:10px;
+    font-size: 80%;
+}
+nav{
+    margin:0;
+    word-spacing: 32px;
+    text-align: center;
+    background-color: rgb(89, 155, 89);
+    padding:5px;
+    color:white;
+
+}
+.header p{
+    margin-top:9px;
+}
+.header h1{
+    margin: 0;
+    padding: 0;
+}
+aside{
+    padding:10px 18px;
+    margin:16px;
+    background-color: rgb(220, 244, 220);
+    border-radius:20px;
+}
+aside{
+    font-size: 80%;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr) ;
+    gap:1rem;
+    perspective: 300;
+    background:url(back.png) ;
+    background-size: cover;
+}
+footer{
+    text-align: center;
+    background-color:rgb(73, 188, 73);
+}
+
+
+.card1 img{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border-radius:6px;
+
+}
+.card2 img{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border-radius:6px;
+
+
+}
+.card3 img{
+    aspect-ratio: 18 / 11;
+    width: 100%;
+    border-radius:6px;
+
+}
+.card4 img{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border-radius:6px;
+}
+.card5 img{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border-radius:6px;
+}
+.card6 img{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border-radius:6px;
+}
+.card1{
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    gap: 40px ;
+    border-radius:6px;
+    padding:7px;
+    margin-top: 20px;
+    max-height:370px;
+    width: 98%;
+    backdrop-filter: blur(5px);
+}
+.card2{
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    gap: 40px ;
+    border-radius:6px;
+    padding:7px;
+    margin-top: 20px;
+    max-height:370px;
+    backdrop-filter: blur(5px);
+}
+
+.card3{
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    gap: 40px ;
+    border-radius:6px;
+    padding:7px;
+    margin-top: 20px;
+    max-height:370px;
+    backdrop-filter: blur(5px);
+}
+.card4{
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    gap: 40px ;
+    border-radius:6px;
+    padding:7px;
+    margin: 20px 0px 0px ;
+    max-height:23rem;
+    backdrop-filter: blur(5px);
+}
+.card5{
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    gap: 40px ;
+    border-radius:6px;
+    padding:7px;
+    margin: 20px 0px 0px ;
+    max-height:370px;
+    backdrop-filter: blur(5px);
+}
+.card6{
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    gap: 40px ;
+    border-radius:6px;
+    padding:7px;
+    margin: 20px 10px 0px 0px;
+    max-height:370px;
+    backdrop-filter: blur(5px);
+}
+.cards p{
+    text-align: center;
+
+}
+.cards{
+    transition: transform 0.3s ease;
+}
+
+
+.cards:hover{
+    transform: scale(1.065);
+}
+
+
+
+
+
+
+/* Assigning the grid item the space we define in the grid layout template */
+header{
+    grid-area:header;
+}
+nav{
+    grid-area:nav;
+}
+aside{
+    grid-area:aside;
+}
+main{
+    grid-area:main;
+    gap:10px 10px;
+}
+footer{
+    grid-area:footer;
+}
+
+
