@@ -56,9 +56,6 @@ aside{
     display: grid;
     grid-template-columns: repeat(7 , 1fr) ;
     gap:1rem;
-    perspective: 300;
-    background:url(back.png) ;
-    background-size: cover;
 }
 footer{
     text-align: center;
